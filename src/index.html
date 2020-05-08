@@ -25,7 +25,7 @@
           </div>
           <div class="header__contacts">
             <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-            <button class="button">заказать звонок</button>
+            <button data-modal="consultation" class="button">заказать звонок</button>
           </div>
       </div>
       </header>
@@ -50,7 +50,7 @@
           </div>
         </div>
 
-        <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+        <button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
         <div class="promo__link">
           или
           <a href="#!">ПЕРЕЙТИ В КАТАЛОГ</a>
@@ -85,7 +85,7 @@
           <div class="advantages__title">Учим бегать</div>
           Помогаем с обучением<br>
           правильной технике бега!<br>
-          Дружим с крупнейшей школой бега в России - 
+          Дружим с крупнейшей шкoлой бега в России - 
             <a href="#!">I LOVE RUNNING.</a>
         </div>
       </div>
@@ -104,7 +104,7 @@
         Просто заполните форму заявки<br>
         и мы перезвоним вам в течении 10 минут
       </div>
-      <form class="feed-form" action="#">
+      <form id="consultation-form" class="feed-form" action="#">
         <input name="name" required placeholder="Ваше имя" type="text">
         <input name="phone" required placeholder="Ваш телефон" type="number">
         <input name="email" required placeholder="Ваш E-mail" type="email">
@@ -174,7 +174,7 @@
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
               <img src="./img/item1.jpg" alt="pulsometr" class="catalog-item__img">
-              <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+              <div class="catalog-item__subtitle">Пульсометр Polar FT2</div>
               <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
               <a href="#!" class="catalog-item__link">ПОДРОБНЕЕ</a>    
             </div>
@@ -389,12 +389,130 @@
   </section>
   <!-- catalog end  -->
 
+  <!-- review start  -->
+<section class="review">
+  <div class="container">
+    <h2 class="title">отзывы клиентов</h2>
+    <div class="review__item">
+      <div class="review__mask">
+        <img src="./img/ava-1.png" alt="avatar" class="review__img">
+      </div>
+        <div class="review__text">
+          <div class="review__name">Ирина Иванченко </div>
+          <div class="review__status">2 полумарафона</div>
+          <div class="review__descr">Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали<br>
+            пульсометр, который подошёл именно под мои цели и финансовые возможности.<br>
+            Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.<br>
+            <br>
+            Новые цели - новый гаджет!<br>
+            <br>
+            Спасибо, RunSmart! </div>
+        </div>
+    </div>
+
+    <div class="review__item">
+      <div class="review__mask">
+        <img src="./img/ava-1.png" alt="avatar" class="review__img">
+      </div>
+        <div class="review__text">
+          <div class="review__name">Ирина Иванченко </div>
+          <div class="review__status">2 полумарафона</div>
+          <div class="review__descr">Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали<br>
+            пульсометр, который подошёл именно под мои цели и финансовые возможности.<br>
+            Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.<br>
+            <br>
+            Новые цели - новый гаджет!<br>
+            <br>
+            Спасибо, RunSmart! </div>
+        </div>
+    </div>
+
+    <div class="review__item">
+      <div class="review__mask">
+        <img src="./img/ava-1.png" alt="avatar" class="review__img">
+      </div>
+        <div class="review__text">
+          <div class="review__name">Ирина Иванченко </div>
+          <div class="review__status">2 полумарафона</div>
+          <div class="review__descr">Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали<br>
+            пульсометр, который подошёл именно под мои цели и финансовые возможности.<br>
+            Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.<br>
+            <br>
+            Новые цели - новый гаджет!<br>
+            <br>
+            Спасибо, RunSmart! </div>
+        </div>
+    </div>
+
+  </div>
+</section>
+  <!-- review end  -->
+
+  <!-- footer start -->
+  <footer class="footer">
+    <div class="footer__map">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acadb5bdd348c5c1cfd59f6126eda44cfe2fc7d6d2d3e173ac77e3ed7fda06662&amp;width=100%25&amp;height=630&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+    <div class="footer__info">
+      <address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
+      <a class="footer__phone" href="tel:84999228974">8 (499) 922-89-74</a>
+      <div class="footer__social">
+        <a href="#" class="footer__social-item"><img src="./icons/facebook.svg" alt="facebook"></a>
+        <a href="#" class="footer__social-item"><img src="./icons/instagram.svg" alt="instagramm"></a>
+        <a href="#" class="footer__social-item"><img src="./icons/pinterest.svg" alt="pinterest"></a>
+
+      </div>
+      
+    </div>
+
+  </footer>
+  <!-- footer end -->
+
+  <!-- modal start -->
+  <div class="overlay">
+    <div class="modal" id="consultation">
+      <div class="modal__close">&times;</div>
+      <div class="modal__subtitle">Просто заполните форму заявки</div>
+      <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+      <form class="feed-form feed-form_mt25" action="#">
+        <input name="name" placeholder="Ваше имя" type="text">
+        <input name="phone" placeholder="Ваш телефон" type="number">
+        <input name="email" placeholder="Ваш E-mail" type="email">
+
+        <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+      </form>
+    </div>
+
+      <div class="modal" id="order">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Ваш заказ:</div>
+        <div class="modal__descr">Пульсометр Polar FT1</div>
+        <form class="feed-form feed-form_mt25" action="#">
+          <input name="name" required placeholder="Ваше имя" type="text">
+          <input name="phone" required placeholder="Ваш телефон" type="number">
+          <input name="email" required placeholder="Ваш E-mail" type="email">
+  
+          <button class="button button_submit">купить</button>
+        </form>
+      </div>
+  
+      <div class="modal modal_mini" id="thanks">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+        <div class="modal__descr">Наш менеджер свяжется с вами 
+          в ближайшее время!</div>
+      </div>
+
+  </div>
+   <!-- modal start -->
+
   <!-- scripts -->
   <script src="./js/header_active.js"> </script>
   <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> -->
   <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/script.js"> </script>
 </body>
 </html>

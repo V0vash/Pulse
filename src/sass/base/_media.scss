@@ -1,3 +1,29 @@
+@media (max-width: 991px){
+    .catalog{
+        &__content{
+            justify-content: center;
+        }
+        &-item{
+            margin: 0 10px 20px 10px;
+        }
+    }
+    .review{
+        &__item{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            img{
+                margin-right: 0;
+            }
+        }
+        &__text{
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+}
+
+
 @media (max-width: 767px){
 .header{
     &__contacts{
