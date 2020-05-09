@@ -21,6 +21,11 @@
             text-align: center;
         }
     }
+    .footer{
+        &__info{
+            padding: 20px 10px 20px 10px;
+        }
+    }
 }
 
 
@@ -121,6 +126,18 @@
         &_left{
             font-size: 20px;
             text-align: center;
+        }
+    }
+    .modal{
+        height: 80vh;
+        &__close{
+            right:35px;
+        }
+    }
+    .catalog{
+        &__tab{
+            width: 83px;
+            font-size: 8px;
         }
     }
 }
