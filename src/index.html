@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Pulse</title>
 </head>
 <body>
 
   <!-- promo start -->
-  <section class="promo">
+  <section id="up" class="promo">
     <div class="container">
       <header class="header">
         <div class="header__wrapper">
@@ -65,7 +62,7 @@
   <!-- advantages start -->
   <section class="advantages">
     <div class="container">
-      <div class="title">НАШИ ПРЕИМУЩЕСТВА</div>
+      <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
 
       <div class="advantages__icons">
         <div class="advantages__icon">
@@ -74,7 +71,7 @@
           Наши сотрудники всегда готовы поделиться своим опытом, 
           так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
         </div>
-        <div class="advantages__icon">
+        <div class="advantages__icon advantages__icon_animated">
           <img src="./icons/advantages/heart.png" alt="heart">
           <div class="advantages__title">Заботимся о здоровье</div>
           Мы работаем для того, 
@@ -116,7 +113,7 @@
   <!-- consultation end -->
   
   <!-- slider start -->
-  <section class="carousel">
+  <div class="carousel">
     <div class="container">
       <div class="carousel__inner">
         <div>
@@ -130,7 +127,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
   <!-- slider start -->
 
   <!-- catalog start  -->
@@ -393,7 +390,7 @@
 <section class="review">
   <div class="container">
     <h2 class="title">отзывы клиентов</h2>
-    <div class="review__item">
+    <div class="review__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="0.5s">
       <div class="review__mask">
         <img src="./img/ava-1.png" alt="avatar" class="review__img">
       </div>
@@ -410,7 +407,7 @@
         </div>
     </div>
 
-    <div class="review__item">
+    <div class="review__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="0.7s">
       <div class="review__mask">
         <img src="./img/ava-1.png" alt="avatar" class="review__img">
       </div>
@@ -427,7 +424,7 @@
         </div>
     </div>
 
-    <div class="review__item">
+    <div class="review__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="0.9s">
       <div class="review__mask">
         <img src="./img/ava-1.png" alt="avatar" class="review__img">
       </div>
@@ -451,7 +448,7 @@
   <!-- footer start -->
   <footer class="footer">
     <div class="footer__map">
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acadb5bdd348c5c1cfd59f6126eda44cfe2fc7d6d2d3e173ac77e3ed7fda06662&amp;width=100%25&amp;height=630&amp;lang=ru_RU&amp;scroll=true"></script>
+      <script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acadb5bdd348c5c1cfd59f6126eda44cfe2fc7d6d2d3e173ac77e3ed7fda06662&amp;width=100%25&amp;height=630&amp;lang=ru_RU&amp;scroll=true"></script>
     </div>
     
     <div class="footer__info">
@@ -505,14 +502,16 @@
   </div>
    <!-- modal start -->
 
+  <a href="#up" class="pageup">
+    <img src="icons/chevron-circle-up-solid.svg" alt="up">
+  </a>
+
   <!-- scripts -->
-  <script src="./js/header_active.js"> </script>
-  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> -->
-  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"> </script>
+  <script src="js/wow.min.js"> </script>
   <script src="js/script.js"> </script>
 </body>
 </html>

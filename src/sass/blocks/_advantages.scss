@@ -25,5 +25,10 @@
                 opacity: 0.7;
             }
         }
+        &_animated{
+            img{
+                animation: heartbeat 1.5s ease infinite;
+        }
     }
+}
 }
